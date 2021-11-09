@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Posting"
+    android:background="@drawable/firstpage_border"
+    android:padding="10dp">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/boardList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"/>
+
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/gradeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:visibility="invisible"/>
+
+        <Space
+            android:layout_weight="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Space>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:hint="제목을 입력하세요"
+        android:textSize="20sp"
+        android:background="@drawable/frame_shadow"
+        android:id="@+id/postTitle"
+        android:singleLine="true">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/frame_shadow"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/postImg"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="여기에는 글이 들어갑니다"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"
+                android:id="@+id/postText"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/frame_shadow"
+        android:paddingTop="12dp"
+        android:paddingBottom="15dp">
+        <EditText
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="링크를 붙여넣기"
+            android:textSize="13sp"
+            android:paddingLeft="9dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <WebView
+            android:id="@+id/postLink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            tools:ignore="WebViewLayout"
+            android:backgroundTint="#fff6cf"
+            android:background="@drawable/frame_shadow"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:text="POST"
+        android:id="@+id/postBtn"
+        android:background="@drawable/btn_border">
+    </Button>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
+
+</LinearLayout>
