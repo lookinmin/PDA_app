@@ -18,6 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
         android:orientation="horizontal">
 
         <Spinner
@@ -69,19 +71,18 @@
 
         <ImageView
             android:id="@+id/postImg"
-            android:layout_width="280dp"
-            android:layout_height="280dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:paddingBottom="10dp"
             android:layout_gravity="center"/>
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="15dp"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="120dp"
             android:layout_gravity="center"
             android:orientation="vertical">
             <EditText
@@ -100,7 +101,7 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="0.6"/>
+        android:layout_weight="0.4"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -138,7 +139,7 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="0.6"/>
+        android:layout_weight="0.4"/>
 
     <Button
         android:layout_width="100sp"

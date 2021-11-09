@@ -8,10 +8,10 @@
     android:background="@drawable/firstpage_border"
     android:orientation="vertical">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </Space>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -24,10 +24,10 @@
         android:textSize="40dp">
     </TextView>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp">
-    </Space>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
     </LinearLayout>
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
+        android:layout_height="15dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,10 +65,10 @@
         android:layout_gravity="center"/>
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
+        android:layout_height="15dp"/>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="450dp">
+        android:layout_height="430dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,9 +142,9 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp">
-    </Space>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>
